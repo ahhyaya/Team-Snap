@@ -26,7 +26,16 @@ test('Get Employee Name', () => {
 })
 
 // test getting ID
+test('Get Employee ID', () => {
+    expect(employee.getId()).toBe(testID);
+})
 
 // test getting email
+test('Get Employee Email', () => {
+    expect(employee.getEmail()).toBe(testEmail);
+})
 
 // test getting Role of Emploee
+test('Get Employee', () => {
+    expect(employee.getRole()).toBe('Employee');
+})
