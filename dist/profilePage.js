@@ -6,13 +6,13 @@
 const addManagerCard = (manager) => {
     return `
     <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex rounded-lg mx-5 w-1/5" style="max-width: 18rem;">
-    <div class="card-header text-center bg-transparent border-success font-weight-bold text-xl">${manager.name}
-    <p class="text-center text-muted my-1 decoration-dotted text-base"><i class="bi bi-person-circle"></i>  Manager</p>
+    <div class="card-header text-center bg-transparent border-success font-weight-bold text-xl font-serif">${manager.name}
+    <p class="text-center text-muted my-1 decoration-dotted text-base font-mono"><i class="bi bi-person-circle"></i>  Manager</p>
     
     </div>
     <div class="card-body text-success">
 
-        <p class="card-text email">Email: <a href = "${manager.email}" class ="text-blue-700 underline">${manager.email}</a></p>
+        <p class="card-text email">Email: <a href = "mailto:${manager.email}" class ="text-blue-700 underline">${manager.email}</a></p>
         <span class="card-text office-number">Office number:  </span><span class="text-black">${manager.officeNumber}</span>
     </div>
     <div class="card-footer bg-transparent border-success italic text-sm text-neutral-800">ID#:  ${manager.id}</div>
@@ -23,12 +23,12 @@ const addManagerCard = (manager) => {
 const addEngineerCard = (engineer) => {
     return `
     <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex rounded-lg mx-5 w-1/5" style="max-width: 18rem;">
-    <div class="card-header bg-transparent border-success  text-center font-weight-bold text-xl">${engineer.name}
-    <p class="text-center text-muted my-1 text-base"><i class="bi bi-tools"></i>  Engineer</p>
+    <div class="card-header bg-transparent border-success  text-center font-weight-bold text-xl font-serif">${engineer.name}
+    <p class="text-center text-muted my-1 text-base font-mono"><i class="bi bi-tools"></i>  Engineer</p>
     </div>
     <div class="card-body text-success">
  
-    <p class="card-text email">Email: <a href = "${engineer.email}" class ="text-blue-700 underline">${engineer.email}</a></p>
+    <p class="card-text email">Email: <a href = "mailto:${engineer.email}" class ="text-blue-700 underline">${engineer.email}</a></p>
         <span class="card-text office-number">Github:  </span><a href="https://github.com/${engineer.github}/" class="text-blue-700 underline">${engineer.github}</a>
     </div>
     <div class="card-footer bg-transparent border-success italic text-sm text-neutral-800">ID#:  ${engineer.id}</div>
@@ -39,12 +39,12 @@ const addEngineerCard = (engineer) => {
 const addInternCard = (intern) => {
     return `
     <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex rounded-lg mx-5 w-1/5" style="max-width: 18rem;">
-    <div class="card-header bg-transparent border-success  text-center font-weight-bold text-xl">${intern.name}
-    <p class="text-center text-muted my-1 text-base"><i class="bi bi-mortarboard"></i>  Intern</p>
+    <div class="card-header bg-transparent border-success  text-center font-weight-bold text-xl font-serif">${intern.name}
+    <p class="text-center text-muted my-1 text-base font-mono"><i class="bi bi-mortarboard"></i>  Intern</p>
     </div>
     <div class="card-body text-success">
    
-    <p class="card-text email">Email: <a href = "${intern.email}" class ="text-blue-700 underline">${intern.email}</a></p>
+    <p class="card-text email">Email: <a href = "mailto:${intern.email}" class ="text-blue-700 underline">${intern.email}</a></p>
         <span class="card-text office-number">School:  </span><span class="text-black">${intern.school}</span>
     </div>
     <div class="card-footer bg-transparent border-success italic text-sm text-neutral-800">ID#:  ${intern.id}</div>
@@ -93,9 +93,9 @@ const generateProfilePage = (employeeCard) => {
     <title>Team Snap</title>
 </head>
 <body>
-    <div class="jumbotron jumbotron-fluid  bg-[#bef264] text-center">
+    <div class="jumbotron jumbotron-fluid bg-rose-200 text-center">
     <div class="container">
-    <h1 class="display-4  font-mono font-extrabold">Team Snap</h1>
+    <h1 class="display-4  font-sans font-extrabold">Team Snap</h1>
     <p class="lead">Team Profile Generator</p>
     </div>
     </div>
