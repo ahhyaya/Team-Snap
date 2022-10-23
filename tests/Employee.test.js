@@ -27,7 +27,7 @@ test('Get Employee Name', () => {
 
 // test getting ID
 test('Get Employee ID', () => {
-    expect(employee.getId()).toBe(testID);
+    expect(employee.getId()).toBe(testId);
 })
 
 // test getting email
