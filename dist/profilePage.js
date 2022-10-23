@@ -29,7 +29,7 @@ const addEngineerCard = (engineer) => {
     <div class="card-body text-success">
  
     <p class="card-text email text-rose-900">Email: <a href = "mailto:${engineer.email}" class ="text-blue-700 underline">${engineer.email}</a></p>
-        <span class="card-text office-number text-rose-900">Github:  </span><a href="https://github.com/${engineer.github}/" class="text-blue-700 underline">${engineer.github}</a>
+        <span class="card-text office-number text-rose-900">Github:  </span><a href="https://github.com/${engineer.github}/" target="_blank" class="text-blue-700 underline">${engineer.github}</a>
     </div>
     <div class="card-footer bg-transparent border-indigo-900 italic text-sm text-neutral-800">ID#:  ${engineer.id}</div>
     </div>
