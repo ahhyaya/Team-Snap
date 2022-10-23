@@ -4,7 +4,7 @@
 
 const addManagerCard = (manager) => {
     return `
-    <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded" style="max-width: 18rem;">
+    <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex" style="max-width: 18rem;">
     <div class="card-header bg-transparent border-success bg-gradient-info">Manager</div>
     <div class="card-body text-success">
         <h5 class="card-title">${manager.name}</h5>
@@ -18,7 +18,7 @@ const addManagerCard = (manager) => {
 
 const addEngineerCard = (engineer) => {
     return `
-    <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded" style="max-width: 18rem;">
+    <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex" style="max-width: 18rem;">
     <div class="card-header bg-transparent border-success">Engineer</div>
     <div class="card-body text-success">
         <h5 class="card-title">${engineer.name}</h5>
@@ -32,7 +32,7 @@ const addEngineerCard = (engineer) => {
 
 const addInternCard = (intern) => {
     return `
-    <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded" style="max-width: 18rem;">
+    <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex" style="max-width: 18rem;">
     <div class="card-header bg-transparent border-success">Intern</div>
     <div class="card-body text-success">
         <h5 class="card-title">${intern.name}</h5>
