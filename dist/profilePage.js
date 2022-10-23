@@ -1,5 +1,7 @@
 // const Engineer = require("../lib/Engineer");
 
+// const Manager = require("../lib/Manager");
+
 const addManagerCard = (manager) => {
     return `
     <div class="card border-success mb-3" style="max-width: 18rem;">
@@ -42,26 +44,27 @@ const addInternCard = (intern) => {
     `;
 }
 
-const profilePage = (team) => {
+const profilePage = (data) => {
     let pageContent = [];
+    for (let i = 0; i < data.length; i++) {
 
-        pageContent.push(team
-            .filter(employee => employee.getRole() === 'Manager')
-            .map(manager => addManagerCard(manager))
-        );
-        
-        pageContent.push(team
-            .filter(employee => employee.getRole() === 'Engineer')
-            .map(engineer => addEngineerCard(engineer))
-        );
+        const role = data[i].getRole();
 
-        pageContent.push(team
-            .filter(employee => employee.getRole() === 'Intern')
-            .map(intern => addInternCard(intern))
-        );
+        if (role === 'Manager'){
+            pageContent.push(addManagerCard(data[i]))
+        }
+
+        if (role === 'Engineer'){
+            pageContent.push(addEngineerCard(data[i]))
+        }
+
+        if (role === 'Intern'){
+            pageContent.push(addInternCard(data[i]))
+        }
 
     const employeeCard = pageContent.join('');
     return generateProfilePage(employeeCard);
+}
 }
 
 
