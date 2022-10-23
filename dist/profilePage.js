@@ -59,11 +59,11 @@ profilePage = (data) => {
             pageContent.push(addInternCard(data[i]));
         }
     }
-
+    const employeeCard = pageContent.join('');
     return generateProfilePage(pageContent.join(''));
 }
 
-const generateProfilePage = () => {
+const generateProfilePage = (employeeCard) => {
     return `
 <!DOCTYPE html>
 <html lang="en">
@@ -77,8 +77,7 @@ const generateProfilePage = () => {
     <title>Team Snap</title>
 </head>
 <body>
-
-    
+    ${employeeCard}
     <script src='/dist/profilePage.js'></script>
 </body>
 </html>
