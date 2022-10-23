@@ -19,7 +19,7 @@ const addManagerCard = (manager) => {
 const addEngineerCard = (engineer) => {
     return `
     <div class="card border-success mb-3" style="max-width: 18rem;">
-    <div class="card-header bg-transparent border-success">Manager</div>
+    <div class="card-header bg-transparent border-success">Engineer</div>
     <div class="card-body text-success">
         <h5 class="card-title">${engineer.name}</h5>
         <p class="card-text email">Email: ${engineer.email}</p>
@@ -33,7 +33,7 @@ const addEngineerCard = (engineer) => {
 const addInternCard = (intern) => {
     return `
     <div class="card border-success mb-3" style="max-width: 18rem;">
-    <div class="card-header bg-transparent border-success">Manager</div>
+    <div class="card-header bg-transparent border-success">Intern</div>
     <div class="card-body text-success">
         <h5 class="card-title">${intern.name}</h5>
         <p class="card-text email">Email: ${intern.email}</p>
