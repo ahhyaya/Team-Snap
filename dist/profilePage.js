@@ -5,7 +5,7 @@
 const addManagerCard = (manager) => {
     return `
     <div class="card border-success mb-3" style="max-width: 18rem;">
-    <div class="card-header bg-transparent border-success">Manager</div>
+    <div class="card-header bg-transparent border-success bg-gradient-info">Manager</div>
     <div class="card-body text-success">
         <h5 class="card-title">${manager.name}</h5>
         <p class="card-text email">Email: ${manager.email}</p>
@@ -79,12 +79,13 @@ const generateProfilePage = (employeeCard) => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://cdn.tailwindcss.com"></script>
     <title>Team Snap</title>
 </head>
 <body>
-    <div class="jumbotron jumbotron-fluid  bg-info">
+    <div class="jumbotron jumbotron-fluid  bg-[#bef264] text-center">
     <div class="container">
-    <h1 class="display-4">Team Snap</h1>
+    <h1 class="display-4  font-mono font-extrabold">Team Snap</h1>
     <p class="lead">Team Profile Generator</p>
     </div>
     </div>
