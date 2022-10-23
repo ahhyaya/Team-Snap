@@ -6,8 +6,8 @@
 const addManagerCard = (manager) => {
     return `
     <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex rounded-lg mx-5 w-1/5" style="max-width: 18rem;">
-    <div class="card-header bg-transparent border-success bg-gradient-info  text-center font-weight-bold">${manager.name}
-    <p class="text-center text-muted"><i class="bi bi-person-circle"></i>  Manager</p>
+    <div class="card-header text-center bg-transparent border-success font-weight-bold">${manager.name}
+    <p class="text-center text-muted my-1"><i class="bi bi-person-circle"></i>  Manager</p>
     
     </div>
     <div class="card-body text-success">
@@ -24,7 +24,7 @@ const addEngineerCard = (engineer) => {
     return `
     <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex rounded-lg mx-5 w-1/5" style="max-width: 18rem;">
     <div class="card-header bg-transparent border-success  text-center font-weight-bold">${engineer.name}
-    <p class="text-center text-muted"><i class="bi bi-tools"></i>  Engineer</p>
+    <p class="text-center text-muted my-1"><i class="bi bi-tools"></i>  Engineer</p>
     </div>
     <div class="card-body text-success">
  
@@ -40,7 +40,7 @@ const addInternCard = (intern) => {
     return `
     <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex rounded-lg mx-5 w-1/5" style="max-width: 18rem;">
     <div class="card-header bg-transparent border-success  text-center font-weight-bold">${intern.name}
-    <p class="text-center text-muted"><i class="bi bi-mortarboard"></i>  Intern</p>
+    <p class="text-center text-muted my-1"><i class="bi bi-mortarboard"></i>  Intern</p>
     </div>
     <div class="card-body text-success">
    
