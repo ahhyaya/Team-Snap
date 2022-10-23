@@ -7,7 +7,8 @@ const addManagerCard = (manager) => {
     return `
     <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex rounded-lg mx-5 w-1/5" style="max-width: 18rem;">
     <div class="card-header bg-transparent border-success bg-gradient-info  text-center font-weight-bold">${manager.name}
-    <p class="text-center text-muted">Manager</p>
+    <p class="text-center text-muted"><i class="bi bi-person-circle"></i>  Manager</p>
+    
     </div>
     <div class="card-body text-success">
 
@@ -23,7 +24,7 @@ const addEngineerCard = (engineer) => {
     return `
     <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex rounded-lg mx-5 w-1/5" style="max-width: 18rem;">
     <div class="card-header bg-transparent border-success  text-center font-weight-bold">${engineer.name}
-    <p class="text-center text-muted">Engineer</p>
+    <p class="text-center text-muted"><i class="bi bi-tools"></i>  Engineer</p>
     </div>
     <div class="card-body text-success">
  
@@ -39,7 +40,7 @@ const addInternCard = (intern) => {
     return `
     <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex rounded-lg mx-5 w-1/5" style="max-width: 18rem;">
     <div class="card-header bg-transparent border-success  text-center font-weight-bold">${intern.name}
-    <p class="text-center text-muted">Intern</p>
+    <p class="text-center text-muted"><i class="bi bi-mortarboard"></i>  Intern</p>
     </div>
     <div class="card-body text-success">
    
@@ -86,6 +87,8 @@ const generateProfilePage = (employeeCard) => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href=
+"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
         <script src="https://cdn.tailwindcss.com"></script>
     <title>Team Snap</title>
 </head>
