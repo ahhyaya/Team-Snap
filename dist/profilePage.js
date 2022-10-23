@@ -1,4 +1,4 @@
-const Engineer = require("../lib/Engineer");
+// const Engineer = require("../lib/Engineer");
 
 const addManagerCard = (manager) => {
     return `
@@ -42,26 +42,28 @@ const addInternCard = (intern) => {
     `;
 }
 
-profilePage = (data) => {
+const profilePage = (team) => {
     let pageContent = [];
-    for (let i = 0; i < data.length; i++) {
-        const role = data[i].getRole();
 
-        if (role === 'Manager') {
-            pageContent.push(addManagerCard(data[i]));
-        }
+        pageContent.push(team
+            .filter(employee => employee.getRole() === 'Manager')
+            .map(manager => addManagerCard(manager))
+        );
+        
+        pageContent.push(team
+            .filter(employee => employee.getRole() === 'Engineer')
+            .map(engineer => addEngineerCard(engineer))
+        );
 
-        if (role === 'Engineer') {
-            pageContent.push(addEngineerCard(data[i]));
-        }
+        pageContent.push(team
+            .filter(employee => employee.getRole() === 'Intern')
+            .map(intern => addInternCard(intern))
+        );
 
-        if (role === 'Intern') {
-            pageContent.push(addInternCard(data[i]));
-        }
-    }
     const employeeCard = pageContent.join('');
     return generateProfilePage(employeeCard);
 }
+
 
 const generateProfilePage = (employeeCard) => {
     return `
