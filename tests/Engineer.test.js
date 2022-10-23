@@ -2,9 +2,6 @@
 const Employee = require('../lib/Employee');
 const Engineer = require('../lib/Engineer');
 const engineer = new Engineer('Rui', 123, 'toruig59@gmail.com', 'ahhyaya');
-const testName = 'Rui'; 
-const testId = 123;
-const testEmail = 'toruig59@gmail.com';
 const testGithub = 'ahhyaya';
 
 
