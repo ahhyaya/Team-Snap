@@ -46,6 +46,15 @@ const addManager = () => {
 
 
     )
+
+.then(managerData => {
+    const {name, id, email, officeNumber} = managerData;
+    const manager = new Manager(name, id, email, officeNumber);
+
+    team.push(manager);
+    console.log(manager)
+})
+
 }
 
 const addEmployee = () => {
@@ -119,6 +128,7 @@ Please Enter Employee's info
             }
 
             team.push(employee);
+            console.log(employee)
         })
 }
 

@@ -43,7 +43,7 @@ const addInternCard = (intern) => {
 }
 
 profilePage = (data) => {
-    pageContent = [];
+    let pageContent = [];
     for (let i = 0; i < data.length; i++) {
         const role = data[i].getRole();
 
@@ -60,7 +60,7 @@ profilePage = (data) => {
         }
     }
     const employeeCard = pageContent.join('');
-    return generateProfilePage(pageContent.join(''));
+    return generateProfilePage(employeeCard);
 }
 
 const generateProfilePage = (employeeCard) => {
