@@ -60,11 +60,11 @@ const profilePage = (data) => {
 
         if (role === 'Intern'){
             pageContent.push(addInternCard(data[i]))
-        }
+        }}
 
     const employeeCard = pageContent.join('');
     return generateProfilePage(employeeCard);
-}
+
 }
 
 

@@ -122,7 +122,7 @@ Please Enter Employee's info
 
     ])
         .then(employeeData => {
-            let { name, id, email, role, github, school, nextEmployee } = employeeData;
+            let { name, id, email, role, github, school, nextEmployee} = employeeData;
             let employee;
 
             if (role === 'Engineer') {
