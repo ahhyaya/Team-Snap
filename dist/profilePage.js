@@ -5,49 +5,49 @@
 
 const addManagerCard = (manager) => {
     return `
-    <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex rounded-lg mx-5 w-1/5" style="max-width: 18rem;">
-    <div class="card-header text-center bg-transparent border-success font-weight-bold text-xl font-serif">${manager.name}
+    <div class="card border-indigo-900 mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex rounded-lg mx-5 w-1/5" style="max-width: 18rem;">
+    <div class="card-header text-center bg-transparent border-indigo-900 font-weight-bold text-xl font-serif">${manager.name}
     <p class="text-center text-muted my-1 decoration-dotted text-base font-mono"><i class="bi bi-person-circle"></i>  Manager</p>
     
     </div>
     <div class="card-body text-success">
 
-        <p class="card-text email">Email: <a href = "mailto:${manager.email}" class ="text-blue-700 underline">${manager.email}</a></p>
-        <span class="card-text office-number">Office number:  </span><span class="text-black">${manager.officeNumber}</span>
+        <p class="card-text email text-rose-900">Email: <a href = "mailto:${manager.email}" class ="text-blue-700 underline">${manager.email}</a></p>
+        <span class="card-text office-number text-rose-900">Office number:  </span><span class="text-black">${manager.officeNumber}</span>
     </div>
-    <div class="card-footer bg-transparent border-success italic text-sm text-neutral-800">ID#:  ${manager.id}</div>
+    <div class="card-footer bg-transparent border-indigo-900 italic text-sm text-neutral-800">ID#:  ${manager.id}</div>
     </div>
     `;
 }
 
 const addEngineerCard = (engineer) => {
     return `
-    <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex rounded-lg mx-5 w-1/5" style="max-width: 18rem;">
-    <div class="card-header bg-transparent border-success  text-center font-weight-bold text-xl font-serif">${engineer.name}
+    <div class="card border-indigo-900 mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex rounded-lg mx-5 w-1/5" style="max-width: 18rem;">
+    <div class="card-header bg-transparent border-indigo-900  text-center font-weight-bold text-xl font-serif">${engineer.name}
     <p class="text-center text-muted my-1 text-base font-mono"><i class="bi bi-tools"></i>  Engineer</p>
     </div>
     <div class="card-body text-success">
  
-    <p class="card-text email">Email: <a href = "mailto:${engineer.email}" class ="text-blue-700 underline">${engineer.email}</a></p>
-        <span class="card-text office-number">Github:  </span><a href="https://github.com/${engineer.github}/" class="text-blue-700 underline">${engineer.github}</a>
+    <p class="card-text email text-rose-900">Email: <a href = "mailto:${engineer.email}" class ="text-blue-700 underline">${engineer.email}</a></p>
+        <span class="card-text office-number text-rose-900">Github:  </span><a href="https://github.com/${engineer.github}/" class="text-blue-700 underline">${engineer.github}</a>
     </div>
-    <div class="card-footer bg-transparent border-success italic text-sm text-neutral-800">ID#:  ${engineer.id}</div>
+    <div class="card-footer bg-transparent border-indigo-900 italic text-sm text-neutral-800">ID#:  ${engineer.id}</div>
     </div>
     `;
 }
 
 const addInternCard = (intern) => {
     return `
-    <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex rounded-lg mx-5 w-1/5" style="max-width: 18rem;">
-    <div class="card-header bg-transparent border-success  text-center font-weight-bold text-xl font-serif">${intern.name}
+    <div class="card border-indigo-900 mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex rounded-lg mx-5 w-1/5" style="max-width: 18rem;">
+    <div class="card-header bg-transparent border-indigo-900  text-center font-weight-bold text-xl font-serif">${intern.name}
     <p class="text-center text-muted my-1 text-base font-mono"><i class="bi bi-mortarboard"></i>  Intern</p>
     </div>
     <div class="card-body text-success">
    
-    <p class="card-text email">Email: <a href = "mailto:${intern.email}" class ="text-blue-700 underline">${intern.email}</a></p>
-        <span class="card-text office-number">School:  </span><span class="text-black">${intern.school}</span>
+    <p class="card-text email text-rose-900">Email: <a href = "mailto:${intern.email}" class ="text-blue-700 underline">${intern.email}</a></p>
+        <span class="card-text office-number text-rose-900">School:  </span><span class="text-black">${intern.school}</span>
     </div>
-    <div class="card-footer bg-transparent border-success italic text-sm text-neutral-800">ID#:  ${intern.id}</div>
+    <div class="card-footer bg-transparent border-indigo-900 italic text-sm text-neutral-800">ID#:  ${intern.id}</div>
     </div>
     `;
 }
