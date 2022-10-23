@@ -1,6 +1,6 @@
 // require Employee
 const Employee = require('../lib/Employee');
-const employee = new Employee();
+const employee = new Employee('Rui', 123, 'toruig59@gmail.com');
 const testName = 'Rui'; 
 const testId = 123;
 const testEmail = 'toruig59@gmail.com';
