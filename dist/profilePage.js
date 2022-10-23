@@ -1,17 +1,20 @@
 // const Engineer = require("../lib/Engineer");
 
 // const Manager = require("../lib/Manager");
+// delete         <h5 class="card-title"></h5>
 
 const addManagerCard = (manager) => {
     return `
     <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex rounded-lg mx-5 w-1/5" style="max-width: 18rem;">
-    <div class="card-header bg-transparent border-success bg-gradient-info">Manager</div>
-    <div class="card-body text-success">
-        <h5 class="card-title">${manager.name}</h5>
-        <p class="card-text email">Email: ${manager.email}</p>
-        <p class="card-text office-number">Office number: ${manager.officeNumber}</p>
+    <div class="card-header bg-transparent border-success bg-gradient-info  text-center font-weight-bold">${manager.name}
+    <p class="text-center text-muted">Manager</p>
     </div>
-    <div class="card-footer bg-transparent border-success">ID number: ${manager.id}</div>
+    <div class="card-body text-success">
+
+        <p class="card-text email">Email:  ${manager.email}</p>
+        <p class="card-text office-number">Office number:  ${manager.officeNumber}</p>
+    </div>
+    <div class="card-footer bg-transparent border-success">ID#:  ${manager.id}</div>
     </div>
     `;
 }
@@ -19,13 +22,15 @@ const addManagerCard = (manager) => {
 const addEngineerCard = (engineer) => {
     return `
     <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex rounded-lg mx-5 w-1/5" style="max-width: 18rem;">
-    <div class="card-header bg-transparent border-success">Engineer</div>
-    <div class="card-body text-success">
-        <h5 class="card-title">${engineer.name}</h5>
-        <p class="card-text email">Email: ${engineer.email}</p>
-        <p class="card-text office-number">Github username: ${engineer.github}</p>
+    <div class="card-header bg-transparent border-success  text-center font-weight-bold">${engineer.name}
+    <p class="text-center text-muted">Engineer</p>
     </div>
-    <div class="card-footer bg-transparent border-success">ID number: ${engineer.id}</div>
+    <div class="card-body text-success">
+ 
+        <p class="card-text email">Email:  ${engineer.email}</p>
+        <p class="card-text office-number">Github username:  ${engineer.github}</p>
+    </div>
+    <div class="card-footer bg-transparent border-success">ID#:  ${engineer.id}</div>
     </div>
     `;
 }
@@ -33,13 +38,15 @@ const addEngineerCard = (engineer) => {
 const addInternCard = (intern) => {
     return `
     <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex rounded-lg mx-5 w-1/5" style="max-width: 18rem;">
-    <div class="card-header bg-transparent border-success">Intern</div>
-    <div class="card-body text-success">
-        <h5 class="card-title">${intern.name}</h5>
-        <p class="card-text email">Email: ${intern.email}</p>
-        <p class="card-text office-number">School: ${intern.school}</p>
+    <div class="card-header bg-transparent border-success  text-center font-weight-bold">${intern.name}
+    <p class="text-center text-muted">Intern</p>
     </div>
-    <div class="card-footer bg-transparent border-success">ID number: ${intern.id}</div>
+    <div class="card-body text-success">
+   
+        <p class="card-text email">Email:  ${intern.email}</p>
+        <p class="card-text office-number">School:  ${intern.school}</p>
+    </div>
+    <div class="card-footer bg-transparent border-success">ID#:  ${intern.id}</div>
     </div>
     `;
 }
