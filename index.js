@@ -116,7 +116,7 @@ Please Enter Employee's info
 
     ])
         .then(employeeData => {
-            let { name, id, email, role, github, school } = employeeData;
+            let { name, id, email, role, github, school, nextEmployee } = employeeData;
             let employee;
 
             if (role === 'Engineer') {
@@ -128,14 +128,18 @@ Please Enter Employee's info
             }
 
             team.push(employee);
-            return team;
+            if(nextEmployee) {
+                return addEmployee(team);
+            } else {
+                return team;
+            }
         })
 }
 
 // function to write Team file
 const addToPage = (data) => {
     let teamPage = './dist/index.html';
-    fs.writeFileSync(teamPage, data, (err) => {
+    fs.writeFile(teamPage, data, (err) => {
         err ? console.log(err) : console.log('Team profile is ready!');
     });
 }
