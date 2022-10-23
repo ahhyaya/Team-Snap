@@ -1,7 +1,7 @@
 // include packages needed
 const fs = require('fs');
 const inquirer = require('inquirer');
-const Employee = require('./lib/Employee');
+// const Employee = require('./lib/Employee');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
@@ -133,10 +133,10 @@ const addToPage = (data) => {
 addManager()
     .then(addEmployee)
     .then(team => {
-        profilePage(team);
+        return profilePage(team);
     })
-    .then(output => {
-        return addToPage(output);
+    .then(outputHTML => {
+        return addToPage(outputHTML);
     })
     .catch(error => {
         console.log(error)
