@@ -1,17 +1,17 @@
 // include packages needed
 const fs = require('fs');
 const inquirer = require('inquirer');
-// const Employee = require('./lib/Employee');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
 const { default: Choices } = require('inquirer/lib/objects/choices');
 const { profile } = require('console');
 const profilePage = require('./dist/profilePage');
+
 const team = [];
 
 
-// create an array of questions for user input
+// create an array of questions for manager input
 const addManager = () => {
 
     console.log(
@@ -42,28 +42,27 @@ const addManager = () => {
             name: 'officeNumber',
             message: 'Please enter manager\'s office number: '
         }
-    ]
+    ])
 
+        // push manager to team array
+        .then(managerData => {
+            const { name, id, email, officeNumber } = managerData;
+            const manager = new Manager(name, id, email, officeNumber);
 
-    )
-
-.then(managerData => {
-    const {name, id, email, officeNumber} = managerData;
-    const manager = new Manager(name, id, email, officeNumber);
-
-    team.push(manager);
-    console.log(manager);
-})
-
+            team.push(manager);
+            console.log(manager);
+        })
 }
 
+
+// create function and questions to get employee's data
 const addEmployee = () => {
 
     console.log(
         `
-=======================================
-Please Enter Employee's info 
----------------------------------------
+======================================
+    Please Enter Employee's info 
+--------------------------------------
      `);
     return inquirer.prompt([
         {
@@ -119,10 +118,10 @@ Please Enter Employee's info
             message: 'Enter next employee?',
             default: false
         }
-
     ])
+    // push employee to team array
         .then(employeeData => {
-            let { name, id, email, role, github, school, addMore} = employeeData;
+            let { name, id, email, role, github, school, addMore } = employeeData;
             let employee;
 
             if (role === 'Engineer') {
@@ -134,16 +133,16 @@ Please Enter Employee's info
             }
 
             team.push(employee);
-        
-            if(addMore) {
-            return addEmployee(team);
+
+            if (addMore) {
+                return addEmployee(team);
             } else {
                 return team;
             }
-})
+        })
 }
 
-// function to write Team file
+// function to write Team file to index page
 const addToPage = (data) => {
     let teamPage = './dist/index.html';
     fs.writeFile(teamPage, data, (err) => {
@@ -151,6 +150,7 @@ const addToPage = (data) => {
     });
 }
 
+// call function to run app
 addManager()
     .then(addEmployee)
     .then(team => {
