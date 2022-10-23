@@ -1,16 +1,17 @@
 // include packages needed
 const fs = require ('fs');
 const inquirer = require('inquirer');
+const profilePage = require('./dist/profilePage')
 const Employee = require('./lib/Employee');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
 const { default: Choices } = require('inquirer/lib/objects/choices');
-
+const infoQuestions =[];
 // create an array of questions for user input
 const addEmployeeQuestions = () => {
     console.log(`Add employee's info to the team`);
-    const infoQuestions = [
+    infoQuestions = [
     {
         type: 'list',
         name: 'role',
@@ -48,7 +49,9 @@ const addToTeam = (input) => {
 }
 // function to initialize app
 let init = () => {
-    inquirer.prompt(infoQuestions)
-    .then(answers => wri)
+    inquirer.prompt(addEmployeeQuestions)
+    .then(answers => addToTeam(addEmployeeQuestions()));
 }
 // function to call to init app
+
+init();
