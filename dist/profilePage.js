@@ -6,10 +6,10 @@ const addManagerCard = (manager) => {
     <div class="card-header bg-transparent border-success">Manager</div>
     <div class="card-body text-success">
         <h5 class="card-title">${manager.name}</h5>
-        <p class="card-text email">${manager.email}</p>
-        <p class="card-text office-number">${manager.officeNumber}</p>
+        <p class="card-text email">Email: ${manager.email}</p>
+        <p class="card-text office-number">Office number: ${manager.officeNumber}</p>
     </div>
-    <div class="card-footer bg-transparent border-success">${manager.id}</div>
+    <div class="card-footer bg-transparent border-success">ID number: ${manager.id}</div>
     </div>
     `;
 }
@@ -20,10 +20,10 @@ const addEngineerCard = (engineer) => {
     <div class="card-header bg-transparent border-success">Manager</div>
     <div class="card-body text-success">
         <h5 class="card-title">${engineer.name}</h5>
-        <p class="card-text email">${engineer.email}</p>
-        <p class="card-text office-number">${engineer.github}</p>
+        <p class="card-text email">Email: ${engineer.email}</p>
+        <p class="card-text office-number">Github username: ${engineer.github}</p>
     </div>
-    <div class="card-footer bg-transparent border-success">${engineer.id}</div>
+    <div class="card-footer bg-transparent border-success">ID number: ${engineer.id}</div>
     </div>
     `;
 }
@@ -34,10 +34,10 @@ const addInternCard = (intern) => {
     <div class="card-header bg-transparent border-success">Manager</div>
     <div class="card-body text-success">
         <h5 class="card-title">${intern.name}</h5>
-        <p class="card-text email">${intern.email}</p>
-        <p class="card-text office-number">${intern.school}</p>
+        <p class="card-text email">Email: ${intern.email}</p>
+        <p class="card-text office-number">School: ${intern.school}</p>
     </div>
-    <div class="card-footer bg-transparent border-success">${intern.id}</div>
+    <div class="card-footer bg-transparent border-success">ID number: ${intern.id}</div>
     </div>
     `;
 }

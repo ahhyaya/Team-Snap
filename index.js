@@ -52,7 +52,7 @@ const addManager = () => {
     const manager = new Manager(name, id, email, officeNumber);
 
     team.push(manager);
-    console.log(manager)
+    return team;
 })
 
 }
@@ -128,7 +128,7 @@ Please Enter Employee's info
             }
 
             team.push(employee);
-            console.log(employee)
+            return team;
         })
 }
 
