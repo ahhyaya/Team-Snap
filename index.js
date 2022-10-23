@@ -17,27 +17,32 @@ const team = [];
     Add employee's info to the team
 ---------------------------------------
          `);
-    const infoQuestions = [
-        {
-            type: 'list',
-            name: 'role',
-            message: 'Please choose employee\'s role: ',
-            choices: ['Manager', 'Engineer', 'Intern', 'None']
-        },
+    const managerInfo = [
+        // {
+        //     type: 'list',
+        //     name: 'role',
+        //     message: 'Please choose employee\'s role: ',
+        //     choices: ['Manager', 'Engineer', 'Intern', 'None']
+        // },
         {
             type: 'input',
             name: 'name',
-            message: 'Please enter employee\'s name: '
+            message: 'Please enter manager\'s name: '
         },
         {
             type: 'input',
             name: 'id',
-            message: 'Please enter employee\'s ID number: '
+            message: 'Please enter manager\'s  ID number: '
         },
         {
             type: 'input',
             name: 'email',
-            message: 'Please enter employee\'s email: '
+            message: 'Please enter manager\'s  email: '
+        },
+        {
+            type: 'input',
+            name: 'officeNumber',
+            message: 'Please enter manager\'s office number: '
         }
     ]
 // }
