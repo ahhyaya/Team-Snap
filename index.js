@@ -176,3 +176,5 @@ const addToTeam = (data) => {
 
 // init();
 addManager()
+    .then(addEmployee)
+    
