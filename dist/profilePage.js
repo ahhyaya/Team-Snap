@@ -6,8 +6,8 @@
 const addManagerCard = (manager) => {
     return `
     <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex rounded-lg mx-5 w-1/5" style="max-width: 18rem;">
-    <div class="card-header text-center bg-transparent border-success font-weight-bold">${manager.name}
-    <p class="text-center text-muted my-1"><i class="bi bi-person-circle"></i>  Manager</p>
+    <div class="card-header text-center bg-transparent border-success font-weight-bold text-xl">${manager.name}
+    <p class="text-center text-muted my-1 decoration-dotted text-base"><i class="bi bi-person-circle"></i>  Manager</p>
     
     </div>
     <div class="card-body text-success">
@@ -15,7 +15,7 @@ const addManagerCard = (manager) => {
         <p class="card-text email">Email:  ${manager.email}</p>
         <p class="card-text office-number">Office number:  ${manager.officeNumber}</p>
     </div>
-    <div class="card-footer bg-transparent border-success">ID#:  ${manager.id}</div>
+    <div class="card-footer bg-transparent border-success italic text-sm text-neutral-800">ID#:  ${manager.id}</div>
     </div>
     `;
 }
@@ -23,15 +23,15 @@ const addManagerCard = (manager) => {
 const addEngineerCard = (engineer) => {
     return `
     <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex rounded-lg mx-5 w-1/5" style="max-width: 18rem;">
-    <div class="card-header bg-transparent border-success  text-center font-weight-bold">${engineer.name}
-    <p class="text-center text-muted my-1"><i class="bi bi-tools"></i>  Engineer</p>
+    <div class="card-header bg-transparent border-success  text-center font-weight-bold text-xl">${engineer.name}
+    <p class="text-center text-muted my-1 text-base"><i class="bi bi-tools"></i>  Engineer</p>
     </div>
     <div class="card-body text-success">
  
         <p class="card-text email">Email:  ${engineer.email}</p>
         <p class="card-text office-number">Github username:  ${engineer.github}</p>
     </div>
-    <div class="card-footer bg-transparent border-success">ID#:  ${engineer.id}</div>
+    <div class="card-footer bg-transparent border-success italic text-sm text-neutral-800">ID#:  ${engineer.id}</div>
     </div>
     `;
 }
@@ -39,15 +39,15 @@ const addEngineerCard = (engineer) => {
 const addInternCard = (intern) => {
     return `
     <div class="card border-success mb-3 shadow-lg p-3 mb-5 bg-white rounded inline-flex rounded-lg mx-5 w-1/5" style="max-width: 18rem;">
-    <div class="card-header bg-transparent border-success  text-center font-weight-bold">${intern.name}
-    <p class="text-center text-muted my-1"><i class="bi bi-mortarboard"></i>  Intern</p>
+    <div class="card-header bg-transparent border-success  text-center font-weight-bold text-xl">${intern.name}
+    <p class="text-center text-muted my-1 text-base"><i class="bi bi-mortarboard"></i>  Intern</p>
     </div>
     <div class="card-body text-success">
    
         <p class="card-text email">Email:  ${intern.email}</p>
         <p class="card-text office-number">School:  ${intern.school}</p>
     </div>
-    <div class="card-footer bg-transparent border-success">ID#:  ${intern.id}</div>
+    <div class="card-footer bg-transparent border-success italic text-sm text-neutral-800">ID#:  ${intern.id}</div>
     </div>
     `;
 }
