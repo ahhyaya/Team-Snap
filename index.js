@@ -122,7 +122,7 @@ Please Enter Employee's info
 
     ])
         .then(employeeData => {
-            let { name, id, email, role, github, school, nextEmployee} = employeeData;
+            let { name, id, email, role, github, school, addMore} = employeeData;
             let employee;
 
             if (role === 'Engineer') {
@@ -134,13 +134,13 @@ Please Enter Employee's info
             }
 
             team.push(employee);
-            
-            if(nextEmployee) {
-                return addEmployee(team);
+        
+            if(addMore) {
+            return addEmployee(team);
             } else {
                 return team;
             }
-        })
+})
 }
 
 // function to write Team file
