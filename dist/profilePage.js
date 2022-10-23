@@ -82,6 +82,12 @@ const generateProfilePage = (employeeCard) => {
     <title>Team Snap</title>
 </head>
 <body>
+    <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+    <h1 class="display-4">Team Snap</h1>
+    <p class="lead">Team Profile Generator</p>
+    </div>
+    </div>
     ${employeeCard}
     <script src='/dist/profilePage.js'></script>
 </body>
