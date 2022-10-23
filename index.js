@@ -112,6 +112,12 @@ Please Enter Employee's info
                     console.log('Please enter employee\'s school: ')
                 }
             }
+        },
+        {
+            type: 'confirm',
+            name: 'addMore',
+            message: 'Enter next employee?',
+            default: false
         }
 
     ])
