@@ -12,8 +12,8 @@ const addManagerCard = (manager) => {
     </div>
     <div class="card-body text-success">
 
-        <p class="card-text email">Email:  ${manager.email}</p>
-        <p class="card-text office-number">Office number:  ${manager.officeNumber}</p>
+        <p class="card-text email">Email: <a href = "${manager.email}" class ="text-blue-700 underline">${manager.email}</a></p>
+        <span class="card-text office-number">Office number:  </span><span class="text-black">${manager.officeNumber}</span>
     </div>
     <div class="card-footer bg-transparent border-success italic text-sm text-neutral-800">ID#:  ${manager.id}</div>
     </div>
@@ -28,8 +28,8 @@ const addEngineerCard = (engineer) => {
     </div>
     <div class="card-body text-success">
  
-        <p class="card-text email">Email:  ${engineer.email}</p>
-        <p class="card-text office-number">Github username:  ${engineer.github}</p>
+    <p class="card-text email">Email: <a href = "${engineer.email}" class ="text-blue-700 underline">${engineer.email}</a></p>
+        <span class="card-text office-number">Github username:  </span><span class="text-black">${engineer.github}</span>
     </div>
     <div class="card-footer bg-transparent border-success italic text-sm text-neutral-800">ID#:  ${engineer.id}</div>
     </div>
@@ -44,8 +44,8 @@ const addInternCard = (intern) => {
     </div>
     <div class="card-body text-success">
    
-        <p class="card-text email">Email:  ${intern.email}</p>
-        <p class="card-text office-number">School:  ${intern.school}</p>
+    <p class="card-text email">Email: <a href = "${intern.email}" class ="text-blue-700 underline">${intern.email}</a></p>
+        <span class="card-text office-number">School:  </span><span class="text-black">${intern.school}</span>
     </div>
     <div class="card-footer bg-transparent border-success italic text-sm text-neutral-800">ID#:  ${intern.id}</div>
     </div>
