@@ -3,22 +3,30 @@
   ## Table of contents:
   ### 
   1. [Description](#description)
-2. [Installation](#installation)
-3. [Demo](#demo)
-4. [License](#license)
-5. [Contribution](#contribution)
-6. [Tests](#tests)
-7. [Questions](#questions)
+  3. [Features](#features)
+3. [Installation](#installation)
+4. [Demo](#demo)
+5. [License](#license)
+6. [Contribution](#contribution)
+7. [Tests](#tests)
+8. [Questions](#questions)
 
   ---
 
   ## Description 
-  ### A Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person
-  ### Simply generate a webpage that displays my team's basic info.
+  ### A Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person. Simply generate a webpage that displays my team's basic info.
   ---
+  ## Features
 
+   * GIVEN a command-line application that accepts user input
+   * email program opens and populates the TO field of the email with the address
+   * GitHub profile opens in a new tab
+   ![feature1](./src/1.png)
+  ---
   ## Installation
-  ### inquirer package, Jest package, bootstrap icon package 
+   * inquirer package (npm i inquirer@8.2.4), 
+   * Jest package (npm i jest), 
+   * bootstrap icon package (npm i bootstrap-icons)
   ---
 
   ## Demo
@@ -29,20 +37,20 @@
 
   ## License
   ### MIT
-  Read more about MIT: https://opensource.org/licenses/MIT 
+  * Read more about MIT: https://opensource.org/licenses/MIT 
 
   ---
 
   ## Contribution
-  ### Ruihan Gao
+  * Ruihan Gao
   ---
 
   ## Command to Run Tests
-  ### npm run test
+  * npm run test
   ---
   
   ## Questions
   ### Reach me with additional questions:
-  ### Github Link: https://github.com/ahhyaya
-  ### Project Link: https://github.com/ahhyaya/Team-Snap
-  ### Email Address: toruig59@gmail.com
+  * Github Link: https://github.com/ahhyaya
+  * Project Link: https://github.com/ahhyaya/Team-Snap
+  * Email Address: toruig59@gmail.com
