@@ -60,15 +60,15 @@ const addEmployee = () => {
 
     console.log(
         `
-======================================
-    Please Enter Employee's info 
---------------------------------------
+============================================================
+    Please choose employee's role and enter related info 
+------------------------------------------------------------
      `);
     return inquirer.prompt([
         {
             type: 'list',
             name: 'role',
-            message: 'Please select employee\'s role: ',
+            message: 'Employee\'s role: ',
             choices: ['Engineer', 'Intern']
         },
         {
