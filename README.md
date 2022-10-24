@@ -22,7 +22,7 @@
   ---
 
   ## Demo
-  ![example Demo](../src/demo.gif)
+  ![Project Demo](https://drive.google.com/file/d/1pnMx_MzlTmAcF8acK-Z-hmXFMt9jIpZT/view)
   ---
 
   ## License
