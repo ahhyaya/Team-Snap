@@ -7,7 +7,7 @@ const addManagerCard = (manager) => {
         </div>
         <div class="card-body text-success">
             <p class="card-text email text-rose-900">Email: <a href = "mailto:${manager.email}" class ="text-blue-700 underline">${manager.email}</a></p>
-            <span class="card-text office-number text-rose-900">Office number:  </span><span class="text-black">${manager.officeNumber}</span>
+            <span class="card-text text-rose-900">Office number:  </span><span class="text-black">${manager.officeNumber}</span>
         </div>
         <div class="card-footer bg-transparent border-indigo-900 italic text-sm text-neutral-800">ID#:  ${manager.id}</div>
         </div>
@@ -23,7 +23,7 @@ const addEngineerCard = (engineer) => {
         </div>
         <div class="card-body text-success">
         <p class="card-text email text-rose-900">Email: <a href = "mailto:${engineer.email}" class ="text-blue-700 underline">${engineer.email}</a></p>
-            <span class="card-text office-number text-rose-900">Github:  </span><a href="https://github.com/${engineer.github}/" target="_blank" class="text-blue-700 underline">${engineer.github}</a>
+            <span class="card-text text-rose-900">Github:  </span><a href="https://github.com/${engineer.github}/" target="_blank" class="text-blue-700 underline">${engineer.github}</a>
         </div>
         <div class="card-footer bg-transparent border-indigo-900 italic text-sm text-neutral-800">ID#:  ${engineer.id}</div>
         </div>
@@ -39,7 +39,7 @@ const addInternCard = (intern) => {
         </div>
         <div class="card-body text-success">
         <p class="card-text email text-rose-900">Email: <a href = "mailto:${intern.email}" class ="text-blue-700 underline">${intern.email}</a></p>
-            <span class="card-text office-number text-rose-900">School:  </span><span class="text-black">${intern.school}</span>
+            <span class="card-text text-rose-900">School:  </span><span class="text-black">${intern.school}</span>
         </div>
         <div class="card-footer bg-transparent border-indigo-900 italic text-sm text-neutral-800">ID#:  ${intern.id}</div>
         </div>
