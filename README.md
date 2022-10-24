@@ -22,7 +22,9 @@
   ---
 
   ## Demo
-  ![Project Demo](https://drive.google.com/file/d/1pnMx_MzlTmAcF8acK-Z-hmXFMt9jIpZT/view)
+
+  https://user-images.githubusercontent.com/113266025/197427433-9479aec5-d56b-41fe-bfd7-1f2a79c965ae.mp4
+
   ---
 
   ## License
